@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="loginForm">
+   
+    <ion-item class="input-group" lines="full">
+      <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-input formControlName="password" type="password" placeholder="Password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [disabled]="!loginForm.valid" type="submit" color="medium" expand="block">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title style="text-align: center;">
+        <small>
+          Not Yet a Member? <a href="register">Sign Up</a>
+        </small>
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
