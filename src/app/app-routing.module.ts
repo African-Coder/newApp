@@ -34,6 +34,26 @@ const routes: Routes = [
     path: 'view-vendor',
     loadChildren: () => import('./components/view-vendor/view-vendor.module').then( m => m.ViewVendorPageModule)
   },
+  {
+    path: 'driver',
+    loadChildren: () => import('./driver/driver/driver.module').then( m => m.DriverPageModule)
+  },
+  {
+    path: 'driver-order',
+    loadChildren: () => import('./driver-components/driver-order/driver-order.module').then( m => m.DriverOrderPageModule)
+  },
+  {
+    path: 'vendor-admin',
+    loadChildren: () => import('./vendor/vendor-admin/vendor-admin.module').then( m => m.VendorAdminPageModule)
+  },
+  {
+    path: 'edit-shop-page',
+    loadChildren: () => import('./vendor-admin-pages/edit-shop-page/edit-shop-page.module').then( m => m.EditShopPagePageModule)
+  },
+  {
+    path: 'view-shop-page',
+    loadChildren: () => import('./vendor-admin-pages/view-shop-page/view-shop-page.module').then( m => m.ViewShopPagePageModule)
+  },
 
 ];
 

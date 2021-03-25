@@ -8,9 +8,9 @@ import { ModalController, NavParams } from '@ionic/angular';
 })
 export class ViewVendorPage implements OnInit {
 
-  vendor:any;
+  vendor :any;
 
-  constructor(navParams: NavParams, private viewVendorCtrl: ModalController) {
+  constructor(private navParams: NavParams, private viewVendorCtrl: ModalController) {
 
     this.vendor = navParams.get('');
 

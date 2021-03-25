@@ -3,22 +3,38 @@
     {
       "vendor_id": 1,
       "vendor_name": "KFC",
-      "type": "Active"
+      "status": "Active",
+      "sales" : 70
     },
     {
       "vendor_id": 2,
       "vendor_name": "Nkuku Box",
-      "type": "Active"
+      "status": "Active",
+      "sales" : 60
     },
     {
       "vendor_id": 3,
       "vendor_name": "Nandos",
-      "type": "Pending"
+      "status": "Active",
+      "sales" : 45
     },
     {
       "vendor_id": 4,
-      "vendor_name": "MAcDees",
-      "type": "Pending"
+      "vendor_name": "Kota Joe's",
+      "status": "Active",
+      "sales" : 35
+    },
+    {
+      "vendor_id": 5,
+      "vendor_name": "MacDees",
+      "status": "Active",
+      "sales" : 100
+    },
+    {
+      "vendor_id": 6,
+      "vendor_name": "Sosh Campus Eats",
+      "status": "Pending",
+      "sales" : 1
     }
   ]
 }
