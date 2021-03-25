@@ -8,8 +8,21 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalComponent implements OnInit {
 
-  @Input() name: string;
-  @Input() type: string;
+  vendors = [
+    {
+      name: "KFC",
+      type: "Active"
+    },
+    {
+      name: "Nandos",
+      type: "Active"
+    },
+    {
+      name: "Nkuku Box",
+      type: "Pending"
+    }
+
+  ];
  
   constructor(private modalCtrl: ModalController) { }
 

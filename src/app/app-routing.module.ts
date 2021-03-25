@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'ion-modal',
     loadChildren: () => import('./pages/ion-modal/ion-modal.module').then( m => m.IonModalPageModule)
   },
+  {
+    path: 'edit-vendor',
+    loadChildren: () => import('./components/edit-vendor/edit-vendor.module').then( m => m.EditVendorPageModule)
+  },
+  {
+    path: 'view-vendor',
+    loadChildren: () => import('./components/view-vendor/view-vendor.module').then( m => m.ViewVendorPageModule)
+  },
 
 ];
 
