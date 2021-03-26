@@ -13,15 +13,21 @@ import { IVendor } from 'src/app/vendor/vendor';
 })
 export class VendorAdminPage implements OnInit {
 
-  shops:any = [];
+  shops = [
+    {
+      name:"Kota Queens",
+      sales: 10,
+      address: "123 Soshanguve Block L"
+    }
+  ];
 
   constructor(private modalCtrl: ModalController,
               private _vendorAdminService : VendorAdminService) { }
 
   ngOnInit() {
 
-    this._vendorAdminService.getVendors()
-        .subscribe(data => this.shops = data);
+    // this._vendorAdminService.getVendors()
+    //     .subscribe(data => this.shops = data);
 
   }
 

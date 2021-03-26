@@ -31,6 +31,11 @@ export class IonModalPage implements OnInit {
       name: "Debonair's Pizza",
       type: "Pending",
       customers: 0
+    },
+    {
+      name: "Kota Queens",
+      type: "Active",
+      customers: 10
     }
 
   ];

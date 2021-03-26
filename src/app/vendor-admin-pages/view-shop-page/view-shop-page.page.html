@@ -6,15 +6,20 @@
         <ion-icon name="md-close" showWhen="android,windows" slot="icon-only" name="close"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>View Shop Information</ion-title>
+    <ion-title>View Your Shop Information</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
     <ion-list-header color="tertiary">
-      Summary of {{shop.restuarant_name}} sales
+      Details about your shop: {{shop.name}}
     </ion-list-header>
+
+    <ion-item>
+      <ion-label>Total Sales:</ion-label>
+      <ion-badge color="primary" slot="end">{{shop.sales}}</ion-badge>
+    </ion-item>
 
     <!-- <ion-item>
       <ion-label>Status of Shop:</ion-label>

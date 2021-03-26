@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class EditShopPagePage implements OnInit {
 
-  shops: any = [] ;
+  shops: any ;
 
   constructor(private editShopCtrl: ModalController) { }
 
